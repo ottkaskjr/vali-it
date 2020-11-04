@@ -96,7 +96,7 @@ public class Lesson3Hard {
         String result = "";
         for(int i = 0; i < text.length(); i++){
             if (!invalid.contains(String.valueOf(text.charAt(i)))){
-                result += morse[alphaB.indexOf(String.valueOf(text.charAt(i)))] + "|";
+                result.concat(morse[alphaB.indexOf(String.valueOf(text.charAt(i)))] + "|");
             }
 
         }

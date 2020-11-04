@@ -203,10 +203,14 @@ public class Lesson2 {
                 visits.sort(new Comparator<Visit>() {
                     @Override
                     public int compare(Visit o1, Visit o2) {
+                        // PEAB TAGASTMA NUMBRILISE VÄÄRTUSE (üldiselt -1, 0, 1)
                         return o1.getVisits() - o2.getVisits();
+                        // Kui tulemus on positiivne siis liigutatakse esimene element jadas edasi(või vahetab teisega kohad?)
                     }
                 });
 
+                // UURI VEEL COMPARABLE interface kohta
+                // if(b1.compareTo(b2) < 0){ System.out.println("true")};
 
                 // test
                 for(Visit line: visits){
