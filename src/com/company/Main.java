@@ -45,6 +45,7 @@ public class Main {
         System.out.println("======== EXERCISE 7 =========");
         //exercise7();
         */
+
         Lesson1MathUtil inputExercise = new Lesson1MathUtil("test");
         //inputExercise.scan();
 
@@ -70,11 +71,11 @@ public class Main {
         System.out.println("===============================");
         */
 
-        /*
+
         System.out.println("========= exercise6 ===========");
         lesson2.exercise6("visits.txt");
         System.out.println("===============================");
-        */
+
 
         /*
         System.out.println("========= exercise7 ===========");
@@ -88,14 +89,15 @@ public class Main {
         System.out.println("===============================");
         */
 
+        /*
         System.out.println("========= exercise9 ===========");
         lesson2.exercise9("nums.txt");
-        System.out.println("===============================");
+        System.out.println("===============================");*/
 
 
 
 
-
+        /*
         System.out.println("========= LESSON3 ===========");
         List<Integer> testList = new ArrayList<>();
         testList.add(4);
@@ -113,7 +115,7 @@ public class Main {
         Map<String, String> testMap = new HashMap<>();
         lesson3.test(testMap);
         Object a;
-
+        */
 
         /*
         System.out.println("========= uusSumma ===========");
@@ -131,10 +133,10 @@ public class Main {
         System.out.println("==============================");
         */
 
-
+        /*
         System.out.println("========= sort ===========");
         System.out.println(Arrays.toString(lesson3.sort(new int[]{57, 3, -4, 0, 1, 2, 4, 6, -14 , 35, 13, 35, -5, 7, 7, 9, 64, 215})));
-        System.out.println("==============================");
+        System.out.println("==============================");*/
 
         /*
         System.out.println("========= reverseString ===========");

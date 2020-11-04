@@ -3,12 +3,8 @@ package com.company;
 import java.io.FileNotFoundException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.util.Arrays;
-import java.util.InputMismatchException;
-import java.util.Scanner;
+import java.util.*;
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Collections;
 
 public class Lesson2 {
 
@@ -177,9 +173,55 @@ public class Lesson2 {
 
     public static void exercise6(String fileName)/* throws FileNotFoundException*/{
         try {
+            // PAREM VARIANT
+            //String a = "2018-01-13, 434";
+            //String[] b = a.split(" ");
+
+            //List<Visit> visits = new ArrayList<>();
+            /*
+            visits.sort(new Comparator<Visit>() {
+                @Override
+                public int compare(Visit o1, Visit o2) {
+                    return 0;
+                }
+            });*/
+
+            File file = new File(fileName);
+            Scanner fileScanner = new Scanner(file);
+            List<Visit> visits = new ArrayList<>();
+            if(file.exists()){
+                while (fileScanner.hasNextLine()) {
+                    //System.out.println(fileScanner.nextLine());
+                    String line = fileScanner.nextLine();
+                    String[] split = line.split(" ");
+
+                    Visit visit = new Visit(split[0], Integer.parseInt(split[1]));
+                    visits.add(visit);
+                }
+
+
+                visits.sort(new Comparator<Visit>() {
+                    @Override
+                    public int compare(Visit o1, Visit o2) {
+                        return o1.getVisits() - o2.getVisits();
+                    }
+                });
+
+
+                // test
+                for(Visit line: visits){
+                    System.out.println(line.getDate() + " " + line.getVisits());
+                }
+            } else {
+                throw new FileNotFoundException();
+            }
+
+            //
+            /*
             File file = new File(fileName);
             Scanner fileScanner = new Scanner(file);
             if(file.exists()){
+
                 ArrayList<Integer> visits = new ArrayList<>();
                 ArrayList<String> dates = new ArrayList<>();
                 while (fileScanner.hasNextLine()) {
@@ -208,7 +250,7 @@ public class Lesson2 {
                 System.out.println("Suurim külastajte arv: " + visits.get(visits.size()-1));
             } else {
                 throw new FileNotFoundException();
-            }
+            }*/
         } catch (FileNotFoundException e){
             System.out.println("File not found");
         }
