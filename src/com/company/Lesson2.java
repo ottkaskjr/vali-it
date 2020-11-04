@@ -216,6 +216,28 @@ public class Lesson2 {
                 throw new FileNotFoundException();
             }
 
+            /*
+            NÄITED
+                class Sortbyroll implements Comparator<Student>
+                {
+                    // Used for sorting in ascending order of
+                    // roll number
+                    public int compare(Student a, Student b)
+                    {
+                        return a.rollno - b.rollno;
+                    }
+                }
+
+                class Sortbyname implements Comparator<Student>
+                {
+                    // Used for sorting in ascending order of
+                    // roll name
+                    public int compare(Student a, Student b)
+                    {
+                        return a.name.compareTo(b.name);
+                    }
+                }
+             */
             //
             /*
             File file = new File(fileName);
