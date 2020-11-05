@@ -71,17 +71,17 @@ public class Main {
         System.out.println("===============================");
         */
 
-
+        /*
         System.out.println("========= exercise6 ===========");
         lesson2.exercise6("visits.txt");
         System.out.println("===============================");
+        */
 
 
-        /*
         System.out.println("========= exercise7 ===========");
         lesson2.exercise7();
         System.out.println("===============================");
-        */
+
 
         /*
         System.out.println("========= exercise8 ===========");

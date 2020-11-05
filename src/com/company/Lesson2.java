@@ -298,11 +298,17 @@ public class Lesson2 {
         BigDecimal d = new BigDecimal("4");
 
 
+
+        // SHORT
+        BigDecimal sum = b.divide(c, 4, RoundingMode.HALF_UP).subtract(d).multiply(a);
+        System.out.println(sum);
+
+        /*
         System.out.println(b.divide(c, 4, RoundingMode.HALF_UP));
 
         BigDecimal num = new BigDecimal("339598759387138751983751375135");
         BigDecimal num2 = new BigDecimal("339598752146416146144751375135");
-        System.out.println(num.add(num2));
+        System.out.println(num.add(num2));*/
     }
 
     public static void exercise8(String fileName) {

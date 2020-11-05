@@ -7,7 +7,7 @@ import java.math.*;
  * Auto-generated code below aims at helping you parse
  * the standard input according to the problem statement.
  **/
-class Player {
+public class CloneGame {
 
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
@@ -49,11 +49,7 @@ class Player {
             System.err.println("cloneFloor - " + cloneFloor);
             System.err.println("clonePos - " + clonePos);
             System.err.println("direction - " + direction);
-            String action = "WAIT";
 
-            if(clonePos == 0 || clonePos == width-1) {
-                action = "BLOCK";
-            }
             int elevatorPos = 0;
             for(int[] elev: elevators){
                 if(elev[0] == cloneFloor){

@@ -12,7 +12,7 @@ import java.math.*;
 /*
 LISATUD IGAKS JUHUKS BACKUPINA
  */
-class Player {
+public class SkynetRevolution {
 
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
