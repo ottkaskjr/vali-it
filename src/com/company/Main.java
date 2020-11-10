@@ -198,6 +198,9 @@ public class Main {
         System.out.print(accountManager.getBalance());
 
          */
+
+        BouncyNumbers bncy = new BouncyNumbers();
+        bncy.run(21780);
     }
 
     public static void excersie1(){
